@@ -1,0 +1,8 @@
+<h1>Log In</h1>
+<%= flash[:alert] unless flash.empty? %>
+
+<%= form_tag('/login', method: :post) %>
+  <label>Name</label>
+  <%= text_field_tag :name %><br><br>
+
+  <%= submit_tag "Login" %>
